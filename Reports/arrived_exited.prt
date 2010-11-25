@@ -1,0 +1,175 @@
+object TprReport
+  ShowProgress = True
+  DesignerFormMode = fmMDIChild
+  PreviewFormMode = fmMDIChild
+  ExportFromPage = 0
+  ExportToPage = 0
+  Values = <>
+  Variables = <
+    item
+      Name = 'ReportTitle'
+      ValueType = 'prvvtString'
+      Value = ''
+    end
+    item
+      Name = 'ReportPeriod'
+      ValueType = 'prvvtString'
+      Value = ''
+    end>
+  Left = 584
+  Top = 32
+  LOGPIXELSX = 96
+  LOGPIXELSY = 96
+  object prPage1: TprPage
+    Width = 2100
+    Height = 2970
+    PaperSize = 9
+    Orientation = poPortrait
+    lMargin = 10
+    rMargin = 10
+    tMargin = 10
+    bMargin = 10
+    object prHTitleBand1: TprHTitleBand
+      Height = 57
+      object prMemoObj1: TprMemoObj
+        dRec.Versions = <
+          item
+            Visible = True
+            Memo.Strings = (
+              '[ReportTitle]'
+              '[ReportPeriod]')
+            lBorder.Width = 1
+            rBorder.Width = 1
+            tBorder.Width = 1
+            bBorder.Width = 1
+            FillColor = 12572607
+            hAlign = prhCenter
+            vAlign = prvCenter
+            Font.Charset = RUSSIAN_CHARSET
+            Font.Color = clRed
+            Font.Height = -13
+            Font.Name = 'Comic Sans MS'
+            Font.Style = [fsUnderline]
+            FontSize = 10
+          end>
+        dRec.Left = 9
+        dRec.Top = 7
+        dRec.Right = 703
+        dRec.Bottom = 49
+        dRec.WidthAsVerticalBand = True
+      end
+    end
+    object prHDetailBand1: TprHDetailBand
+      Height = 26
+      DataSetName = 'IBQuery1'
+      Groups = (
+        'prGroup1'
+        'prGroup2')
+      object prMemoObj4: TprMemoObj
+        dRec.Versions = <
+          item
+            Visible = True
+            Memo.Strings = (
+              '[IBQuery1.EVENT_NAME] - [IBQuery1.DATETIME]')
+            lBorder.Width = 1
+            rBorder.Width = 1
+            tBorder.Width = 1
+            bBorder.Width = 1
+            FillColor = clWhite
+            vAlign = prvCenter
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial Cyr'
+            Font.Style = []
+            FontSize = 10
+          end>
+        dRec.Left = 2
+        dRec.Top = 7
+        dRec.Right = 714
+        dRec.Bottom = 24
+      end
+    end
+    object prHGroupHeaderBand1: TprHGroupHeaderBand
+      Height = 40
+      Group = prGroup1
+      ColCount = 1
+      ColDirection = prcdTopBottomLeftRight
+      LinkToDetail = False
+      StartNewPage = False
+      ReprintOnEachPage = False
+      object prMemoObj2: TprMemoObj
+        dRec.Versions = <
+          item
+            Visible = True
+            Memo.Strings = (
+              '[IBQuery1.structure_name]')
+            lBorder.Show = True
+            lBorder.Width = 1
+            rBorder.Show = True
+            rBorder.Width = 1
+            tBorder.Show = True
+            tBorder.Width = 1
+            bBorder.Show = True
+            bBorder.Width = 1
+            FillColor = clSilver
+            hAlign = prhCenter
+            vAlign = prvCenter
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = []
+            FontSize = 10
+          end>
+        dRec.Left = 204
+        dRec.Top = 11
+        dRec.Right = 604
+        dRec.Bottom = 34
+      end
+    end
+    object prHGroupHeaderBand2: TprHGroupHeaderBand
+      Height = 40
+      Group = prGroup2
+      ColCount = 0
+      ColDirection = prcdTopBottomLeftRight
+      LinkToDetail = False
+      StartNewPage = False
+      ReprintOnEachPage = False
+      object prMemoObj3: TprMemoObj
+        dRec.Versions = <
+          item
+            Visible = True
+            Memo.Strings = (
+              '[IBQuery1.full_name]')
+            lBorder.Width = 1
+            rBorder.Width = 1
+            tBorder.Width = 1
+            bBorder.Show = True
+            bBorder.Width = 1
+            FillColor = clWhite
+            hAlign = prhCenter
+            vAlign = prvCenter
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = []
+            FontSize = 10
+          end>
+        dRec.Left = 202
+        dRec.Top = 10
+        dRec.Right = 602
+        dRec.Bottom = 33
+      end
+    end
+  end
+  object prGroup1: TprGroup
+    Valid = 'IBQuery1.structure_name'
+    DetailBand = prHDetailBand1
+  end
+  object prGroup2: TprGroup
+    Valid = 'IBQuery1.FULL_NAME'
+    DetailBand = prHDetailBand1
+  end
+end
