@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="cas.exe"/>
+    <OBJFILES value="cas.obj _CardProcessingThread.obj _CardReader.obj About.obj Cafeteria.obj DBService.obj GuestCardIssue.obj InputLine.obj KPP.obj LicensingAgreement.obj Login.obj Main.obj ObjectsTree.obj OrganizationInfo.obj PrintCards.obj Report.obj ReportChart.obj Schedules.obj UnitProperties.obj Zones.obj $(BCB)\Lib.PR\pr_Designer.obj;"/>
+    <RESFILES value="cas.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) About.dfm Cafeteria.dfm DBService.dfm GuestCardIssue.dfm InputLine.dfm KPP.dfm LicensingAgreement.dfm Login.dfm Main.dfm ObjectsTree.dfm OrganizationInfo.dfm PrintCards.dfm Report.dfm ReportChart.dfm Schedules.dfm UnitProperties.dfm Zones.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vcldbx.lib tee.lib teedb.lib vgr_CommonControlsBCB6.lib bcbsmp.lib dbexpress.lib dsnap.lib cds.lib bdertl.lib vclx.lib prPackageCB6.lib ibxpress.lib vcldb.lib dbrtl.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib dbrtl.lib vcldb.lib ibxpress.lib prPackageCB6.lib vclx.lib bdertl.lib cds.lib dsnap.lib dbexpress.lib bcbsmp.lib vgr_CommonControlsBCB6.lib teedb.lib tee.lib vcldbx.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi vcldb.bpi ibsmp.bpi bdertl.bpi vcldbx.bpi ibxpress.bpi dsnap.bpi vclie.bpi inetdb.bpi inet.bpi webdsnap.bpi bcbie.bpi dclocx.bpi bcb2kaxserver.bpi adortl.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi dss.bpi teeqr.bpi nmfast.bpi prPackageCB6.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="cas.cpp"/>
+    <INCLUDEPATH value="$(BCB)\Projects;..;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Lib.PR;$(BCB)\PR;$(BCB)\vtk"/>
+    <LIBPATH value="$(BCB)\Projects;..;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Lib.PR;$(BCB)\PR;$(BCB)\vtk"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\Projects -I.. -I$(BCB)\include -I$(BCB)\include\vcl -I$(BCB)\Lib.PR -I$(BCB)\PR -I$(BCB)\vtk -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="cas.res" FORMNAME="" UNITNAME="cas.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="cas.cpp" FORMNAME="" UNITNAME="cas" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_CardProcessingThread.cpp" FORMNAME="" UNITNAME="_CardProcessingThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_CardReader.cpp" FORMNAME="" UNITNAME="_CardReader" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="_frmupd.cpp" FORMNAME="" UNITNAME="_frmupd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About.cpp" FORMNAME="fAbout" UNITNAME="About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Cafeteria.cpp" FORMNAME="fCafeteria" UNITNAME="Cafeteria" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DBService.cpp" FORMNAME="fDBService" UNITNAME="DBService" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GuestCardIssue.cpp" FORMNAME="fGuestCardIssue" UNITNAME="GuestCardIssue" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="InputLine.cpp" FORMNAME="fInputLine" UNITNAME="InputLine" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="KPP.cpp" FORMNAME="fKPP" UNITNAME="KPP" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LicensingAgreement.cpp" FORMNAME="fLicensingAgreement" UNITNAME="LicensingAgreement" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Login.cpp" FORMNAME="fLogin" UNITNAME="Login" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Main.cpp" FORMNAME="fMain" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ObjectsTree.cpp" FORMNAME="fObjectsTree" UNITNAME="ObjectsTree" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OrganizationInfo.cpp" FORMNAME="fOrganizationInfo" UNITNAME="OrganizationInfo" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PrintCards.cpp" FORMNAME="fPrintCards" UNITNAME="PrintCards" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Report.cpp" FORMNAME="fReport" UNITNAME="Report" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ReportChart.cpp" FORMNAME="fReportChart" UNITNAME="ReportChart" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Schedules.cpp" FORMNAME="fSchedules" UNITNAME="Schedules" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UnitProperties.cpp" FORMNAME="fUnitProperties" UNITNAME="UnitProperties" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Zones.cpp" FORMNAME="fZones.cpp" UNITNAME="Zones.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="$(BCB)\Lib.PR\pr_Designer.obj" FORMNAME="" UNITNAME="pr_Designer.obj" CONTAINERID="OBJTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+</PROJECT>

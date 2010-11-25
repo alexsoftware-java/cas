@@ -1,0 +1,114 @@
+object fKPP: TfKPP
+  Left = 292
+  Top = 170
+  BorderIcons = [biSystemMenu, biMinimize]
+  ClientHeight = 251
+  ClientWidth = 568
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Arial'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  Position = poDesktopCenter
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object imgPhoto: TImage
+    Left = 0
+    Top = 0
+    Width = 193
+    Height = 251
+    Align = alLeft
+    Center = True
+    Proportional = True
+    Stretch = True
+  end
+  object lbStructure: TLabel
+    Left = 216
+    Top = 3
+    Width = 102
+    Height = 26
+    Caption = 'lbStructure'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -23
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbLName: TLabel
+    Left = 216
+    Top = 55
+    Width = 84
+    Height = 26
+    Caption = 'lbLName'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -23
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbFName: TLabel
+    Left = 216
+    Top = 87
+    Width = 84
+    Height = 26
+    Caption = 'lbFName'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -23
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbMName: TLabel
+    Left = 216
+    Top = 119
+    Width = 90
+    Height = 26
+    Caption = 'lbMName'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -23
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbPassText1: TLabel
+    Left = 264
+    Top = 183
+    Width = 102
+    Height = 24
+    Caption = 'lbPassText1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbPassText2: TLabel
+    Left = 264
+    Top = 215
+    Width = 102
+    Height = 24
+    Caption = 'lbPassText2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+  end
+  object shpCircle: TShape
+    Left = 216
+    Top = 176
+    Width = 41
+    Height = 33
+    Shape = stCircle
+  end
+end

@@ -1,0 +1,92 @@
+object TprReport
+  ShowProgress = True
+  DesignerFormMode = fmMDIChild
+  PreviewFormMode = fmMDIChild
+  ExportFromPage = 0
+  ExportToPage = 0
+  Values = <>
+  Variables = <
+    item
+      Name = 'ReportTitle'
+      ValueType = 'prvvtString'
+      Value = ''
+    end
+    item
+      Name = 'ReportPeriod'
+      ValueType = 'prvvtString'
+      Value = ''
+    end>
+  Left = 584
+  Top = 32
+  LOGPIXELSX = 96
+  LOGPIXELSY = 96
+  object prPage1: TprPage
+    Width = 2100
+    Height = 2970
+    PaperSize = 9
+    Orientation = poPortrait
+    lMargin = 10
+    rMargin = 10
+    tMargin = 10
+    bMargin = 10
+    object prHTitleBand1: TprHTitleBand
+      Height = 70
+      object prMemoObj1: TprMemoObj
+        dRec.Versions = <
+          item
+            Visible = True
+            Memo.Strings = (
+              '[ReportTitle]'
+              '[ReportPeriod]')
+            lBorder.Width = 1
+            rBorder.Width = 1
+            tBorder.Width = 1
+            bBorder.Width = 1
+            FillColor = 12572607
+            hAlign = prhCenter
+            vAlign = prvCenter
+            Font.Charset = RUSSIAN_CHARSET
+            Font.Color = clRed
+            Font.Height = -13
+            Font.Name = 'Comic Sans MS'
+            Font.Style = [fsUnderline]
+            FontSize = 10
+          end>
+        dRec.Left = 10
+        dRec.Top = 10
+        dRec.Right = 704
+        dRec.Bottom = 54
+        dRec.WidthAsVerticalBand = True
+      end
+    end
+    object prHDetailBand1: TprHDetailBand
+      Height = 23
+      DataSetName = 'IBQuery1'
+      object prMemoObj4: TprMemoObj
+        dRec.Versions = <
+          item
+            Visible = True
+            Memo.Strings = (
+              '[IBQuery1.DATETIME]  -  [IBQuery1.EVENT_NAME]')
+            lBorder.Width = 1
+            rBorder.Width = 1
+            tBorder.Width = 1
+            bBorder.Show = True
+            bBorder.Width = 1
+            FillColor = clWhite
+            vAlign = prvCenter
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial Cyr'
+            Font.Style = []
+            FontSize = 10
+          end>
+        dRec.Left = 4
+        dRec.Top = 3
+        dRec.Right = 545
+        dRec.Bottom = 24
+      end
+    end
+  end
+end
